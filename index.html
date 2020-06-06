@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Диплом.Основы_верстки</title>
+		<meta charset="UTF-8"> 
+		<link rel="stylesheet" type="text/css" href="M7_1_style.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" href="swiper.min.css">
+		<link rel="stylesheet" href="default-styles.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+
+		<div class="site-container">
+			
+
+
+			<header class="header">
+					<div class="container header__container">
+						<nav class="header__menu menu">
+							<button class="header__burger" type="button" aria-label="Меню">
+
+								<picture class="header__burger">
+									<source media="(max-width: 576px)" srcset="img/burger_320.png"> 
+									<img src="img/burger.png" alt="бургер">
+								</picture>
+
+							</button>
+							<ul class="menu__list list">
+								<li class="list__item"> <a href="#" class="list__link">Услуги</a></li>
+								<li class="list__item"> <a href="#" class="list__link list__link_active">Портфолио</a></li>
+								<li class="list__item"> <a href="#" class="list__link">Стоимость</a></li>
+							</ul>
+						</nav>
+						<a href="#" class="header__tel tel">+7 (499) 995-55-77</a>
+						<button class="header__callback callback">Заказать звонок
+						</button>
+						<button class="header__phone">
+							<svg height="36" width="36">
+  							<circle cx="21" cy="13" r="12" stroke="#fa539c" stroke-width="2" fill="white" />
+  							Sorry, your browser does not support inline SVG.  
+							</svg>
+						</button>
+					</div>
+			</header>
+
+			<main class="main">
+				<section class="about">
+					<span class="fly__tag fly__tag_braces">{&nbsp;}</span>		
+					<span class="fly__tag fly__tag_div">&#60;div&#62;</span>
+					<span class="fly__tag fly__tag_hash">#</span>
+					<span class="fly__tag fly__tag_div2">&#60;div&#62;</span>
+					<span class="fly__tag fly__tag_closed">&#60;/&#62;</span>											
+					<span class="fly__tag fly__tag_closed2">&#60;/&#62;</span>		
+
+					<div class="container about__container">
+						<div class="about__information information">
+							<h1 class="information__title">Дмитрий Алексеев
+							<span class="information__sub">Frontend-разработчик и веб-верстальщик</span></h1>
+							<button class="information__button button-about">Узнать больше</button>
+						</div>
+						
+						<picture class="about__img">
+							<source media="(max-width: 376px)" srcset="img/about/human_320.png"> 
+							<img src="img/about/human_1920.png" alt="фото">
+						</picture>
+
+					</div>
+						
+					<picture class="about__ellipse">
+						<source media="(max-width: 320px)" srcset="img/about/ellipse_320.svg"> <source media="(max-width: 1024px)" srcset="img/about/ellipse_1024.svg">
+						<img src="img/about/ellipse_1920.svg" alt="фон эллипс">
+					</picture>	
+					
+				</section>
+				
+
+				<section class="abilities"> 
+					<div class="container abilities__container">
+						<h2 class="abilities__title title"> Что я делаю</h2>
+
+						<div class="container abilities__row">
+							<div class="abilities__column">
+								<div class="item-about">
+
+									<picture class="item-about__icon">
+										<source media="(max-width: 376px)" srcset="img/abilities/icon1_320.png">
+										
+										<img src="img/abilities/icon1.png" alt="icon">
+									</picture>	
+
+									<p class="item-about__text">Вёрстка лендинг&nbsp;–&nbsp;страниц <br>и сайтов любой сложности
+									</p>
+								</div>
+							</div>
+							<div class="abilities__column">
+								<div class="item-about">
+																		
+									<picture class="item-about__icon">
+										<source media="(max-width: 376px)" srcset="img/abilities/icon2_320.png">
+										
+										<img src="img/abilities/icon2.png" alt="icon">
+									</picture>
+
+									<p class="item-about__text">Адаптивная вёрстка под все<br>браузеры и устройства
+									</p>
+								</div>
+							</div>
+							<div class="abilities__column">
+								<div class="item-about">
+									
+									<picture class="item-about__icon">
+										<source media="(max-width: 376px)" srcset="img/abilities/icon3_320.png">
+										
+										<img src="img/abilities/icon3.png" alt="icon">
+									</picture>
+
+									<p class="item-about__text">Frontend–разработка <br> и программирование
+									</p>
+								</div>
+							</div>
+							<div class="abilities__column">
+								<div class="item-about">
+
+									<picture class="item-about__icon">
+										<source media="(max-width: 376px)" srcset="img/abilities/icon4_320.png">
+										
+										<img src="img/abilities/icon4.png" alt="icon">
+									</picture>
+									
+									<p class="item-about__text">Исправление и доработка <br>существующей вёрстки
+									</p>
+								</div>
+							</div>	
+						</div>
+						<button class="main__button button-about">Узнать стоимость</button>
+					</div>
+
+				</section>
+
+				<section class="portfolio">
+
+					<div class="container portfolio__container">
+						<h2 class="portfolio__title title"> Примеры моих работ</h2>
+
+
+						<div class="slider-container">
+							<div class="slider-buttons">
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div>
+							<!-- <div class="swiper-container swiper-no-swiping"> -->
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide card">
+										<picture class="swiper1">
+											<source media="(max-width: 320px)" srcset="img/swiper/img1-320.png"> <source media="(max-width: 1100px)" srcset="img/swiper/img1-1024.png">
+											<img src="img/swiper/img1-1920.png" alt="слайд1">
+										</picture>
+										<p class="picture-about__text">Сайт психолога Веры Антоновой
+										</p>
+									</div>
+
+									<div class="swiper-slide card">
+										<picture class="swiper2">
+											<source media="(max-width: 320px)" srcset="img/swiper/img2-320.png"> <source media="(max-width: 1100px)" srcset="img/swiper/img2-1024.png">
+											<img src="img/swiper/img2-1920.png" alt="слайд2">
+										</picture>
+										<p class="picture-about__text">Сайт магазина детской одежды
+										</p>		
+									</div>
+
+									<div class="swiper-slide card">
+										<picture class="swiper3">
+											<source media="(max-width: 320px)" srcset="img/swiper/img3-320.png"> <source media="(max-width: 1100px)" srcset="img/swiper/img3-1024.png">
+											<img src="img/swiper/img3-1920.png" alt="слайд1">
+										</picture>
+										<p class="picture-about__text">Сайт магазина «Рыболов»
+										</p>	
+									</div>
+									
+								</div>
+								
+								<div class="swiper-pagination">
+									
+								</div>
+							</div>	
+
+						</div>
+
+						<button class="main__button button-about">Заказать проект</button>
+					</div>
+
+				</section>
+
+				<section class="price">
+
+					<span class="fly__tag_price fly__tag_braces-price">{&nbsp;}</span>
+					<span class="fly__tag_price fly__tag_closed-price">&#60;/&#62;</span>
+					<span class="fly__tag_price fly__tag_hash-price">#</span>		
+					<span class="fly__tag_price fly__tag_div-price">&#60;div&#62;</span>
+					<span class="fly__tag_price fly__tag_braces2-price">{&nbsp;}</span>
+
+					<div class="price__information">
+						<h2 class="price__title">
+						Адаптивная вёрстка под все устройства <br>и браузеры от 1000 рублей всего за 4 часа.*</h2>
+						<p class="price__sub">* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидиуально, <br>в зависимости от сложности задач.</p>
+					</div>
+				</section>
+
+			</main>
+
+			<footer class="footer">
+				<div class="container footer__container">
+					
+						<nav class="footer__menu menu">
+							<ul class="menu__list list">
+								<li class="list__item-footer"> <a href="#" class="list__link-footer">Услуги</a></li>
+								<li class="list__item-footer"> <a href="#" class="list__link-footer">Портфолио</a></li>
+								<li class="list__item-footer"> <a href="#" class="list__link-footer">Стоимость</a></li>
+							</ul>
+						</nav>
+
+						<div class="footer__contacts">
+							<ul class="contacts">
+								<li class="contacts__item"><a href="tel:+74999955577" class="tel-footer">+7 (499) 995-77-55</a></li>
+
+								<li class="contacts__item"><a href="mailto:dmitry@alekseev.com" class="mail">dmitry@alekseev.com</a></li>
+							</ul>
+						</div>
+
+						<div class="footer__social">
+							<button class="footer__callback" type="button" >Заказать звонок
+							</button>
+
+							<ul class="footer__icons">
+								<li><a href="#" class="icons icons_vk" aria-label="Перейти в ВКонтакт"> </a></li>
+								<li><a href="#" class="icons icons_facebook" aria-label="Перейти в Фейсбук"></a></li>
+								<li><a href="#" class="icons icons_twitter" aria-label="Перейти в Твиттер"></a></li>
+								<li><a href="#" class="icons icons_insta" aria-label="Перейти в Инстаграмм"></a></li>
+							</ul>
+
+						</div>
+					
+				</div>
+				<small class="footer__bottom">&#169;&nbsp;Дмитрий Алексеев,&nbsp;2016-2018</small>
+			</footer>
+		</div>
+
+		<div class="popup">
+			<form class="popup__form">
+
+				<input type="hidden" name="project_name" value="Заказ веб страницы">
+				<input type="hidden" name="admin_email" value="igor.zavedyuk@yandex.ru">
+				<input type="hidden" name="form_subject" value="Тема">
+
+				<button class="form_close"><img src="img/popup/cross.png" width="26" height="26" alt="закрыть"></button>
+
+				<input type="text" name="имя" class="form_name" placeholder="введите свое имя">
+				<input type="tel" name="телефон" class="form_number" placeholder="введите номер обратной связи">
+				
+				<button type="submit" class="form_button" > Нажмите для отправки </button>
+			</form>
+	
+		</div>
+
+		<div class="popup__nav">
+
+			<nav class="menu__popup">
+				<button class="form_close"><img src="img/popup/cross.png" width="26" height="26" alt="закрыть"></button>
+
+				<ul class="menu__popup_list">
+					<li class="list__item"> <a href="#" class="list__link">Услуги</a></li>
+					<li class="list__item"> <a href="#" class="list__link list__link_active">Портфолио</a></li>
+					<li class="list__item"> <a href="#" class="list__link">Стоимость</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+		<script src="swiper.min.js"></script>
+		<script src="slider.js"></script>
+		<script src="jquery-3.3.1.js"></script>
+		<script src="M7_1_form.js"></script>
+		<script src="jquery.validate.min.js"></script>
+		<script src="jquery.inputmask.min.js"></script>
+		<script>
+			$('input[type="tel"]').inputmask({"mask": "+7(999) 999-9999"}); //specifying options
+
+			$('form').each(function(){
+				$(this).validate({
+					// errorPlacement(error, element){ - этот кусок если открыть убирает подсвечивание дефолтного текста что в поле требуется ввод, и messages работают
+					// 	return true;
+					// },
+					focusInvalid: false,
+					rules: {
+						телефон: {
+							required: true,
+
+						},
+						имя: {
+							required: true,
+						}
+					},
+					messages: {
+						телефон: {
+							required: "заполните поле",
+						},
+						имя: {
+							required: "заполните поле",
+						}
+					},
+					submitHandler(form){
+						let th = $(form);
+
+					$.ajax({
+						type: 'POST',
+						url: 'mail.php',
+						data: th.serialize(),
+					}).done(() => {
+						th.trigger('reset');
+						
+						console.log('Отправлено')
+
+						
+					});
+					return false;
+					}
+			});
+			});
+		</script>
+	</body>
+</html>
+
