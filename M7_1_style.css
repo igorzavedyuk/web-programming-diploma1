@@ -133,24 +133,6 @@ button:hover {
 	transition: background 1s, color 1s, font-weight 1s, border 1s, linear 1s;
 }
 
-/*.header__phone:hover{
-	content: '\f2a0';
-	font-size: 17px;
-	background-image: black;
-	margin-top: 6px;
-	border: none;
-	transition: color 1s,linear 1s;
-}
-
-svg:hover{
-	height: 36px;
-	width: 41px;
-	top:-2px;
-	opacity: 0.5;
-	background: #ff7769;
-	transition: color 1s,linear 1s;
-}*/
-
 .header__callback.callback:hover, .information__button.button-about:hover{
 	background: white;
 	color:red;
