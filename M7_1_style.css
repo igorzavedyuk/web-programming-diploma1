@@ -129,7 +129,7 @@ button:hover {
 	color:red;
 	font-weight: bold;
 	border: 1px solid red;
-	transform: scale(1.1);
+	/*transform: scale(1.1);*/
 	transition: background 1s, color 1s, font-weight 1s, border 1s, linear 1s;
 }
 
@@ -714,8 +714,9 @@ button:hover {
 }
 
 .fixed {
-	position:fixed; /*позиционируем чтобы исчез скролл*/
+	/*position:fixed; *//*позиционируем чтобы исчез скролл*/
 	width:100%; /*чтобы верстка не складывалась по ширине*/
+	overflow-y: hidden;
 }
 
 /*POPUP NAV*/
