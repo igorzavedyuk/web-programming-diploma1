@@ -325,9 +325,11 @@
 						url: 'mail.php',
 						data: th.serialize(),
 					}).done(() => {
-						th.trigger('reset');
+						console.log('Отправлено') 
 						
-						console.log('Отправлено')
+						th.trigger('reset');
+
+						
 
 						
 					});
