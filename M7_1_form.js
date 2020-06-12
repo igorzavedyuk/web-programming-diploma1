@@ -3,39 +3,6 @@
 
 $('.footer__callback, .button-about, .callback, .header__phone')
 
-	// .css({
-	// 	'margin-left': '20px',
-	// 	'margin-button':'40px'
-	// })
-	// .click(function(){
-
-	// 	ВАРИАНТ 1  $('.popup').fadeIn(400);
-	// 		if (window_width < 576) {
- //    		$('.popup__form').width(300) .height(450);
- //    	} else {
- //    		$('.popup__form').width(500);
- //    	};
-		
-	// 	$("body").addClass("fixed");
-	// });
-
-// КАК БЫЛО $('.popup').fadeIn(400);
-// 		$('.popup__form').animate({
-// 			width: '500px',
-// 			height: '450px'
-// 		}, 400);
-// 		$("body").addClass("fixed");
-// 	});
-
-// ВАРИАНТ 2
-	// $('.popup').fadeIn(400);
-	// 	$('.popup__form').animate({
-	// 		width: '310px',
-	// 		height: '450px'
-	// 	}, 400);
-	// 	$("body").addClass("fixed");
-	// });
-	// ВАРИАНТ 3
 	.click(function(){
 		
 	var mql = window.matchMedia('all and (max-width: 576px)');
@@ -57,6 +24,12 @@ if (mql.matches) {
 		$("body").addClass("fixed");
 	};
     // нет, размер окна более 576px 
+
+	// $('.form_button').cick(function(){
+	// 	$('.confirmation').fadeIn(400);
+
+	// });
+
 
 	function hideForm(item){
 		item.fadeOut(1500);
@@ -110,15 +83,13 @@ if (mql.matches) {
 		}, 400);
 		$("body").removeClass("fixed");
 		});
-
-	// $('.form_close').click(function(event){
-	// 	if(event.target != this) {
-	// 		$(this).fadeOut(400);
-	// 		$('.popup').animate({
-	// 		width: 0,
-	// 		height: 0
-	// 	}, 400);
-	// 	}
-	// 	$("body").removeClass("fixed");
-
-	// });
+	// плавный скролл по якорю
+	$(document).ready(function(){
+    $(".menu, .menu__popup").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    	});
+	});
+	

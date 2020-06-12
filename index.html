@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>Диплом.Основы_верстки</title>
+		<title>Дмитрий Алексеев - фронтенд-разработчик и верстальщик</title>
 		<meta charset="UTF-8"> 
 		<link rel="stylesheet" type="text/css" href="M7_1_style.css">
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
@@ -34,12 +34,12 @@
 
 							</button>
 							<ul class="menu__list list">
-								<li class="list__item"> <a href="#" class="list__link">Услуги</a></li>
-								<li class="list__item"> <a href="#" class="list__link list__link_active">Портфолио</a></li>
-								<li class="list__item"> <a href="#" class="list__link">Стоимость</a></li>
+								<li class="list__item"> <a href="#1" class="list__link">Услуги</a></li>
+								<li class="list__item"> <a href="#2" class="list__link ">Портфолио</a></li> <!-- убрал list__link_active -->
+								<li class="list__item"> <a href="#3" class="list__link">Стоимость</a></li>
 							</ul>
 						</nav>
-						<a href="#" class="header__tel tel">+7 (499) 995-55-77</a>
+						<a href="tel:+74999955577" class="header__tel tel">+7 (499) 995-55-77</a>
 						<button class="header__callback callback">Заказать звонок
 						</button>
 						<button class="header__phone">
@@ -84,7 +84,7 @@
 
 				<section class="abilities"> 
 					<div class="container abilities__container">
-						<h2 class="abilities__title title"> Что я делаю</h2>
+						<h2 class="abilities__title title" id="1"> Что я делаю</h2>
 
 						<div class="container abilities__row">
 							<div class="abilities__column">
@@ -148,7 +148,7 @@
 				<section class="portfolio">
 
 					<div class="container portfolio__container">
-						<h2 class="portfolio__title title"> Примеры моих работ</h2>
+						<h2 class="portfolio__title title" id="2"> Примеры моих работ</h2>
 
 
 						<div class="slider-container">
@@ -209,7 +209,7 @@
 					<span class="fly__tag_price fly__tag_braces2-price">{&nbsp;}</span>
 
 					<div class="price__information">
-						<h2 class="price__title">
+						<h2 class="price__title" id="3">
 						Адаптивная вёрстка под все устройства <br>и браузеры от 1000 рублей всего за 4 часа.*</h2>
 						<p class="price__sub">* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидиуально, <br>в зависимости от сложности задач.</p>
 					</div>
@@ -222,9 +222,9 @@
 					
 						<nav class="footer__menu menu">
 							<ul class="menu__list list">
-								<li class="list__item-footer"> <a href="#" class="list__link-footer">Услуги</a></li>
-								<li class="list__item-footer"> <a href="#" class="list__link-footer">Портфолио</a></li>
-								<li class="list__item-footer"> <a href="#" class="list__link-footer">Стоимость</a></li>
+								<li class="list__item-footer"> <a href="#1" class="list__link-footer">Услуги</a></li>
+								<li class="list__item-footer"> <a href="#2" class="list__link-footer">Портфолио</a></li>
+								<li class="list__item-footer"> <a href="#3" class="list__link-footer">Стоимость</a></li>
 							</ul>
 						</nav>
 
@@ -265,8 +265,9 @@
 
 				<input type="text" name="имя" class="form_name" placeholder="введите свое имя">
 				<input type="tel" name="телефон" class="form_number" placeholder="введите номер обратной связи">
-				
+				<p class="confirmation">Данные отправлены, мы Вам перезвоним!!!</p>
 				<button type="submit" class="form_button" > Нажмите для отправки </button>
+				
 			</form>
 	
 		</div>
@@ -277,9 +278,9 @@
 				<button class="form_close"><img src="img/popup/cross.png" width="26" height="26" alt="закрыть"></button>
 
 				<ul class="menu__popup_list">
-					<li class="list__item"> <a href="#" class="list__link">Услуги</a></li>
-					<li class="list__item"> <a href="#" class="list__link list__link_active">Портфолио</a></li>
-					<li class="list__item"> <a href="#" class="list__link">Стоимость</a></li>
+					<li class="list__item"> <a href="#1" class="list__link">Услуги</a></li>
+					<li class="list__item"> <a href="#2" class="list__link list__link_active">Портфолио</a></li>
+					<li class="list__item"> <a href="#3" class="list__link">Стоимость</a></li>
 				</ul>
 			</nav>
 
@@ -325,12 +326,15 @@
 						url: 'mail.php',
 						data: th.serialize(),
 					}).done(() => {
+						console.log('Отправлено') 
+						
 						th.trigger('reset');
-						
-						console.log('Отправлено')
 
-						
+					
+					$('.confirmation').fadeIn(400);
+					
 					});
+
 					return false;
 					}
 			});
