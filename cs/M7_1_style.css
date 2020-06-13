@@ -597,7 +597,7 @@ button:not(:hover){
 }
 
 .icons{
-	background-image: url(img/icons/sprite.jpg);
+	background-image: url(../img/icons/sprite.jpg);
   	background-repeat: no-repeat;
   	height: 35px;
   	width: 35px;
