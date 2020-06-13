@@ -3,24 +3,22 @@
 	<head>
 		<title>Дмитрий Алексеев - фронтенд-разработчик и верстальщик</title>
 		<meta charset="UTF-8"> 
-		<link rel="stylesheet" type="text/css" href="M7_1_style.css">
-		<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
-		<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+		<link rel="stylesheet" type="text/css" href="cs/M7_1_style.css">
+		<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.css"> 
+		<link rel="apple-touch-icon" sizes="180x180" href="libs/fav/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="libs/fav/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="libs/fav/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#ffffff">
-		<link rel="stylesheet" href="swiper.min.css">
-		<link rel="stylesheet" href="default-styles.css">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="libs/slider/swiper.min.css">
+		<link rel="stylesheet" href="libs/slider/default-styles.css">
+		<link rel="stylesheet" href="libs/slider/style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 
 		<div class="site-container">
-			
-
 
 			<header class="header">
 					<div class="container header__container">
@@ -35,7 +33,7 @@
 							</button>
 							<ul class="menu__list list">
 								<li class="list__item"> <a href="#1" class="list__link">Услуги</a></li>
-								<li class="list__item"> <a href="#2" class="list__link ">Портфолио</a></li> <!-- убрал list__link_active -->
+								<li class="list__item"> <a href="#2" class="list__link ">Портфолио</a></li>  <!-- убрал  list__link_active -->
 								<li class="list__item"> <a href="#3" class="list__link">Стоимость</a></li>
 							</ul>
 						</nav>
@@ -241,10 +239,10 @@
 							</button>
 
 							<ul class="footer__icons">
-								<li><a href="#" class="icons icons_vk" aria-label="Перейти в ВКонтакт"> </a></li>
-								<li><a href="#" class="icons icons_facebook" aria-label="Перейти в Фейсбук"></a></li>
-								<li><a href="#" class="icons icons_twitter" aria-label="Перейти в Твиттер"></a></li>
-								<li><a href="#" class="icons icons_insta" aria-label="Перейти в Инстаграмм"></a></li>
+								<li><a href="https://vk.com/" class="icons icons_vk" aria-label="Перейти в ВКонтакт"> </a></li>
+								<li><a href="https://www.facebook.com" class="icons icons_facebook" aria-label="Перейти в Фейсбук"></a></li>
+								<li><a href="https://twitter.com" class="icons icons_twitter" aria-label="Перейти в Твиттер"></a></li>
+								<li><a href="https://www.instagram.com/" class="icons icons_insta" aria-label="Перейти в Инстаграмм"></a></li>
 							</ul>
 
 						</div>
@@ -279,19 +277,19 @@
 
 				<ul class="menu__popup_list">
 					<li class="list__item"> <a href="#1" class="list__link">Услуги</a></li>
-					<li class="list__item"> <a href="#2" class="list__link list__link_active">Портфолио</a></li>
+					<li class="list__item"> <a href="#2" class="list__link">Портфолио</a></li>
 					<li class="list__item"> <a href="#3" class="list__link">Стоимость</a></li>
 				</ul>
 			</nav>
 
 		</div>
 
-		<script src="swiper.min.js"></script>
-		<script src="slider.js"></script>
-		<script src="jquery-3.3.1.js"></script>
-		<script src="M7_1_form.js"></script>
-		<script src="jquery.validate.min.js"></script>
-		<script src="jquery.inputmask.min.js"></script>
+		<script src="libs/slider/swiper.min.js"></script>
+		<script src="libs/slider/slider.js"></script>
+		<script src="js/jquery-3.3.1.js"></script>
+		<script src="js/M7_1_form.js"></script>
+		<script src="libs/jquery.validate.min.js"></script>
+		<script src="libs/jquery.inputmask.min.js"></script>
 		<script>
 			$('input[type="tel"]').inputmask({"mask": "+7(999) 999-9999"}); //specifying options
 

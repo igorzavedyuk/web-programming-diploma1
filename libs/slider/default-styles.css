@@ -1,0 +1,24 @@
+/*.card{
+	padding: 0px 0px;
+	height: 290px;
+	color: grey;
+	font-size:16px;
+}*/
+
+.slider-container{
+	max-width: 100%; /*если оставить 1170 то кусок слайда справа 
+	будет где то в невидимой области сайта*/
+	position: relative;
+	margin: 0 auto;
+	z-index: 0;
+}
+
+.swiper-slide img {  /*/именно это комбинация селекторов заставила слайдер отображать картинки на 100% и по центру страницы адаптивно*/
+    flex-shrink: 0;
+    width: 100%;
+    /*height: 100%;*/
+    position: relative;
+    transition-property: transform;
+}
+
+
