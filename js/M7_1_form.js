@@ -1,9 +1,7 @@
 
 // FORM
 
-$('.footer__callback, .button-about, .callback, .header__phone')
-
-	.click(function(){
+$('.footer__callback, .button-about, .callback, .header__phone').click(function(){
 		
 	var mql = window.matchMedia('all and (max-width: 576px)');
 if (mql.matches) {
@@ -25,11 +23,6 @@ if (mql.matches) {
 	};
     // нет, размер окна более 576px 
 
-	// $('.form_button').cick(function(){
-	// 	$('.confirmation').fadeIn(400);
-
-	// });
-
 
 	function hideForm(item){
 		item.fadeOut(1500);
@@ -46,24 +39,6 @@ if (mql.matches) {
 
 		$("body").removeClass("fixed");
 	});
-
-	$('.header__burger').click(function(){
-		$('.popup__nav').fadeIn(400);
-		$('.menu__popup').animate({
-			width: '190px',
-			height: '190px'
-		}, 400);
-		$("body").addClass("fixed");
-	});
-
-	$('.form_close').click(function(){
-		$('.popup__nav').fadeOut(400);
-		$('.menu__popup').animate({
-			width: 0,
-			height: 0
-		}, 400);
-		$("body").removeClass("fixed");
-		});
 });
 // NAV
 	$('.header__burger').click(function(){
@@ -83,6 +58,7 @@ if (mql.matches) {
 		}, 400);
 		$("body").removeClass("fixed");
 		});
+	
 	// плавный скролл по якорю
 	$(document).ready(function(){
     $(".menu, .menu__popup").on("click","a", function (event) {
@@ -93,3 +69,51 @@ if (mql.matches) {
     	});
 	});
 	
+// SLIDER 	
+
+const slider = document.querySelector('.swiper-container');
+
+
+ let mySwiper = new Swiper (slider, {
+    
+    slidesPerView: 1,
+
+    spaceBetween: 30,
+
+    pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: 'true',
+    // кликабельный паджинейшн
+  },
+  	slideToClickedSlide:'true',
+  	// кликабельные слайды , работают при вытертом доп класе у контейнера swiper-no-swiping
+  	loop: 'true',
+  	// закольцованнсть слайдера
+  	// slidesPerGroup:'2', количестсво слайдов в группе
+   // кнопки навигации
+   // centeredSlides:'true',
+   // слайд по центру активный
+   navigation: {  
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+    breakpoints: {
+// при ширине менять к-во слайдов
+      769: {
+      slidesPerView: 2,
+      spaceBetween: 35,
+      // centeredSlides:'true',
+    },
+      1101:{
+      slidesPerView: 3,
+      spaceBetween: 30,
+      // centeredSlides:'false',
+    
+    }
+  }
+})
+
+var screen = window.innerWidth;
+console.log (screen)

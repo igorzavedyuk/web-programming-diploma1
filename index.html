@@ -3,17 +3,17 @@
 	<head>
 		<title>Дмитрий Алексеев - фронтенд-разработчик и верстальщик</title>
 		<meta charset="UTF-8"> 
-		<link rel="stylesheet" type="text/css" href="cs/M7_1_style.css">
-		<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.css"> 
+		<link rel="stylesheet" type="text/css" href="css/M7_1_style.css">
+		<!-- <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.css"> --> 
 		<link rel="apple-touch-icon" sizes="180x180" href="libs/fav/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="libs/fav/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="libs/fav/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
+		<link rel="manifest" href="libs/fav/site.webmanifest">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#ffffff">
-		<link rel="stylesheet" href="libs/slider/swiper.min.css">
+		<!-- <link rel="stylesheet" href="libs/slider/swiper.min.css">
 		<link rel="stylesheet" href="libs/slider/default-styles.css">
-		<link rel="stylesheet" href="libs/slider/style.css">
+		<link rel="stylesheet" href="libs/slider/style.css"> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
@@ -42,8 +42,8 @@
 						</button>
 						<button class="header__phone">
 							<svg height="36" width="36">
-  							<circle cx="21" cy="13" r="12" stroke="#fa539c" stroke-width="2" fill="white" />
-  							Sorry, your browser does not support inline SVG.  
+  							<circle cx="21" cy="13" r="12" stroke="#fa539c" stroke-width="2" fill="white">
+  							</circle>
 							</svg>
 						</button>
 					</div>
@@ -239,10 +239,10 @@
 							</button>
 
 							<ul class="footer__icons">
-								<li><a href="https://vk.com/" class="icons icons_vk" aria-label="Перейти в ВКонтакт"> </a></li>
-								<li><a href="https://www.facebook.com" class="icons icons_facebook" aria-label="Перейти в Фейсбук"></a></li>
-								<li><a href="https://twitter.com" class="icons icons_twitter" aria-label="Перейти в Твиттер"></a></li>
-								<li><a href="https://www.instagram.com/" class="icons icons_insta" aria-label="Перейти в Инстаграмм"></a></li>
+								<li><a href="https://vk.com/" target="_blank" class="icons icons_vk" aria-label="Перейти в ВКонтакт"> </a></li>
+								<li><a href="https://www.facebook.com" target="_blank" class="icons icons_facebook" aria-label="Перейти в Фейсбук"></a></li>
+								<li><a href="https://twitter.com" target="_blank" class="icons icons_twitter" aria-label="Перейти в Твиттер"></a></li>
+								<li><a href="https://www.instagram.com/" target="_blank" class="icons icons_insta" aria-label="Перейти в Инстаграмм"></a></li>
 							</ul>
 
 						</div>
@@ -283,13 +283,12 @@
 			</nav>
 
 		</div>
-
-		<script src="libs/slider/swiper.min.js"></script>
-		<script src="libs/slider/slider.js"></script>
 		<script src="js/jquery-3.3.1.js"></script>
-		<script src="js/M7_1_form.js"></script>
 		<script src="libs/jquery.validate.min.js"></script>
 		<script src="libs/jquery.inputmask.min.js"></script>
+		<script src="libs/slider/swiper.min.js"></script>
+		<!-- <script src="libs/slider/slider.js"></script> -->
+		<script src="js/M7_1_form.js"></script>
 		<script>
 			$('input[type="tel"]').inputmask({"mask": "+7(999) 999-9999"}); //specifying options
 
@@ -321,7 +320,7 @@
 
 					$.ajax({
 						type: 'POST',
-						url: 'mail.php',
+						url: 'libs/mail.php',
 						data: th.serialize(),
 					}).done(() => {
 						console.log('Отправлено') 

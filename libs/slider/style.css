@@ -37,12 +37,12 @@
 
 .swiper-button-next{
 	background-image: url(img/right-arrow.png); 
-	box-shadow: 0 3px 10px 1px grey;
+	box-shadow: -10px 3px 10px 1px grey;
 }
 
 .swiper-button-prev {
 	background-image: url(img/left-arrow.png); 
-	box-shadow: 0 3px 10px 1px grey;
+	box-shadow: 10px 3px 10px 1px grey;
 }
 
 .swiper-button-next, .swiper-button-prev{
@@ -68,6 +68,14 @@
 	display: none;
 }
 
+.swiper-button-next:hover, .swiper-button-prev:hover {
+	transform: scale(1.2);
+	transition: linear 1s;
+}
+
+.swiper-button-next:not(:hover), .swiper-button-prev:not(:hover) {
+	transition: linear 1s;
+}
 
 @media (max-width: 1320px) {
 
